@@ -91,6 +91,9 @@ interface CaptchaObj {
  * @return {CaptchaObj}
  */
 export function create(options?: ConfigObject): CaptchaObj;
+
+export function createCaptcha(text: string,options?: ConfigObject): CaptchaObj;
+
 /**
  * This method returns a object that has two props:
  * data: svg image string
